@@ -1,0 +1,5 @@
+<div>
+  <div id="time">Date: {{ timeOfTransaction | date:'w: yyyy MMMM dd HH-mm-ss' }}</div>
+  <div id="amount">Amount: {{ amount | currency:'EUR':'symbol-narrow':'1.2-2':'de' }}</div>
+  <div id="fee">Fee: {{ fee | percent:'1.2-2' }}</div>
+</div>
